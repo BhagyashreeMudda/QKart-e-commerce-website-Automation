@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="TestNG Group Test">
+   
+    <test name = "Test Execution using testNG" verbose="2">
+        <groups>
+            <run>
+              <include name = "Sanity_test"></include>
+              <include name = "Regression_Test"></include>
+            </run>
+        </groups>
+
+
+        <classes>
+            <class name="QKART_TESTNG.QKART_Tests"></class>
+        </classes>
+    </test>
+</suite>
+
+
+
